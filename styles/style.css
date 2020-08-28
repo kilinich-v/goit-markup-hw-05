@@ -100,6 +100,7 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+	transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item:not(:last-child),
@@ -138,6 +139,7 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
+	transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -427,12 +429,14 @@ img {
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .icon {
 	width: 20px;
 	height: 20px;
 	fill: var(--decoration-color);
+	transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .link:hover .icon,
@@ -479,6 +483,7 @@ img {
 
 	border: 1px solid var(--decoration-color);
 	border-radius: 4px;
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .link:hover,
@@ -488,6 +493,7 @@ img {
 
 .clients .icon {
 	fill: var(--decoration-color);
+	transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .link:hover .icon,
@@ -572,6 +578,7 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: rgba(255, 255, 255, 0.1);
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join .item {
