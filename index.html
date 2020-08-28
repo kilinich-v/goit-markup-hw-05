@@ -17,16 +17,16 @@
 	<body>
 		<!-- Шапка -->
 		<header class="page-header">
-			<div class="container main-nav">
-				<nav class="site-nav">
+			<div class="container main-nav flexbox">
+				<nav class="site-nav flexbox">
 					<a class="logo" href="./index.html"> <span class="accent">Web</span>Studio</a>
-					<ul class="list">
+					<ul class="list flexbox">
 						<li class="item"><a class="link accent" href="./index.html">Студия</a></li>
 						<li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
 						<li class="item"><a class="link" href="">Контакты</a></li>
 					</ul>
 				</nav>
-				<ul class="contacts-nav list">
+				<ul class="contacts-nav flexbox list">
 					<li class="item"
 						><a class="link" href="mailto:info@example.com">
 							<svg class="icon icon-mail">
@@ -49,52 +49,61 @@
 
 		<main>
 			<!-- Герой -->
-			<section class="hero">
+			<section class="hero flexbox">
 				<div class="hero-container">
 					<h1 class="hero-title list">Эффективные решения для вашего бизнеса</h1>
-					<button class="hero-btn link list" href="">Заказать услугу</button>
+					<button class="hero-btn link list" href="" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
-
+			<!-- Форма для обратной связи -->
+			<section class="dropbox flexbox is-hidden" data-modal>
+				<div class="modal">
+					<!-- <h2>Оставьте свои данные, мы вам перезвоним</h2>
+					<input type="text" placeholder="Имя" />
+					<input type="tel" placeholder="Телефон" />
+					<input type="email" placeholder="Почта" />
+					<textarea placeholder="Комментарий"></textarea>
+					<input type="checkbox" />
+					<p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+					<button>Отправить</button> -->
+					<button class="close-btn" aria-label="Закрыть" data-modal-close>
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</section>
 			<!-- Преимущества -->
 			<section class="features">
 				<div class="container">
-					<ul class="features-list list">
+					<ul class="features-list flexbox list">
 						<li class="item">
 							<svg class="icon">
 								<use xlink:href="./images/sprite.svg#details"></use>
 							</svg>
 							<h3 class="features-title">Внимание к деталям</h3>
-							<p>
-								Идейные соображения, а также начало повседневной работы по формированию позиции.
-							</p>
+							<p> Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
 						</li>
 						<li class="item">
 							<svg class="icon">
 								<use xlink:href="./images/sprite.svg#clock"></use>
 							</svg>
 							<h3 class="features-title">Пунктуальность</h3>
-							<p>
-								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-							</p>
+							<p> Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
 						</li>
 						<li class="item">
 							<svg class="icon">
 								<use xlink:href="./images/sprite.svg#diagram"></use>
 							</svg>
 							<h3 class="features-title">Планирование</h3>
-							<p>
-								Равным образом консультация с широким активом в значительной степени обуславливает.
-							</p>
+							<p> Равным образом консультация с широким активом в значительной степени обуславливает. </p>
 						</li>
 						<li class="item">
 							<svg class="icon">
 								<use xlink:href="./images/sprite.svg#astronaut"></use>
 							</svg>
 							<h3 class="features-title">Современные технологии</h3>
-							<p>
-								Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-							</p>
+							<p> Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
 						</li>
 					</ul>
 				</div>
@@ -104,18 +113,18 @@
 			<section class="activity">
 				<div class="container">
 					<h2 class="activity-title">Чем мы занимаемся</h2>
-					<ul class="list">
+					<ul class="list flexbox">
 						<li class="item">
+							<h3 class="activity-text">Десктопные приложения</h3>
 							<img src="./images/desc.jpg" alt="Десктопные приложения" width="370" />
-							<!-- <h3>Десктопные приложения</h3> -->
 						</li>
 						<li class="item">
+							<h3 class="activity-text">Мобильные приложения</h3>
 							<img src="./images/mobile.jpg" alt="Мобильные приложения" width="370" />
-							<!-- <h3>Мобильные приложения</h3> -->
 						</li>
 						<li class="item">
+							<h3 class="activity-text">Дизайнерские решения</h3>
 							<img src="./images/design.jpg" alt="Дизайнерские решения" width="370" />
-							<!-- <h3>Дизайнерские решения</h3> -->
 						</li>
 					</ul>
 				</div>
@@ -274,7 +283,7 @@
 			<section class="clients">
 				<div class="container">
 					<h2 class="clients-title">Постоянные клиенты</h2>
-					<ul class="list">
+					<ul class="list flexbox">
 						<li class="item">
 							<a class="link" href="">
 								<svg class="icon">
@@ -324,7 +333,7 @@
 
 		<!-- Подвал -->
 		<footer class="footer">
-			<div class="container">
+			<div class="container flexbox">
 				<div class="footer-adress">
 					<a class="logo link" href="./index.html"> <span class="accent">Web</span>Studio </a>
 					<address class="contacts">
@@ -341,7 +350,7 @@
 				</div>
 				<div class="join">
 					<p class="join-title">присоединяйтесь</p>
-					<ul class="social list">
+					<ul class="social flexbox list">
 						<li>
 							<a class="insta link" href="" aria-label="Ссылка на Instagram">
 								<svg class="icon icon-insta">
@@ -374,5 +383,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
