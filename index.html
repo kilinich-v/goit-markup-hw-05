@@ -58,19 +58,35 @@
 			<!-- Форма для обратной связи -->
 			<section class="dropbox flexbox is-hidden" data-modal>
 				<div class="modal">
-					<!-- <h2>Оставьте свои данные, мы вам перезвоним</h2>
-					<input type="text" placeholder="Имя" />
-					<input type="tel" placeholder="Телефон" />
-					<input type="email" placeholder="Почта" />
-					<textarea placeholder="Комментарий"></textarea>
-					<input type="checkbox" />
-					<p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
-					<button>Отправить</button> -->
-					<button class="close-btn" aria-label="Закрыть" data-modal-close>
-						<svg class="icon">
-							<use xlink:href="./images/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
+					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+					<div class="modal-body flexbox">
+						<label>
+							Имя
+							<input class="modal-input" type="text" />
+						</label>
+						<label>
+							Телефон
+							<input class="modal-input" type="tel" />
+						</label>
+						<label>
+							Почта
+							<input class="modal-input" type="email" />
+						</label>
+						<label>
+							Комментарий
+							<textarea class="modal-input"></textarea>
+						</label>
+						<label>
+							<input type="checkbox" />
+							<p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+						</label>
+						<button>Отправить</button>
+						<button class="close-btn" aria-label="Закрыть" data-modal-close>
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</section>
 			<!-- Преимущества -->
